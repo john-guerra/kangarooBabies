@@ -1,0 +1,273 @@
+doctype html
+html
+  head
+    title Untangling the Hairball
+    link(rel="stylesheet", href="css/reveal.css")
+    link(rel="stylesheet", href="css/theme/white.css")
+    link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="css/scrollable.css")
+    link(rel="stylesheet", href="css/scrollableHairball.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento")
+
+    meta(charset='utf-8')
+    meta(name='author', content='Deisy Díaz, John Alexis Guerra Gomez')
+    meta(name='description', content="Kangaroo Babies")
+    meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui")
+
+    style.
+      .reveal h1,
+      .reveal h2,
+      .reveal h3,
+      .reveal h4 {
+        font-family: 'Oswald', serif;
+      }
+      .reveal {
+
+        font-family: 'Quattrocento', sans-serif;
+      }
+  body
+
+    div.reveal
+      div.slides
+
+        div.scrollable.scrollable-hairball
+          div#networkChartHair
+
+        div.scrollable.scrollable-tips
+          div#networkChartTips
+
+        section
+          section
+            h1 Kangaroo Babies
+
+            p.authors.
+              Deisy Díaz#[sup &dagger;], #[a(href='http://johnguerra.co/', target='_blank') John A. Guerra Gómez]#[sup &dagger;], Julieta#[sup &Dagger;], Nathalie#[sup &Dagger;], Tiberio#[sup &dagger;]
+              #[br]
+              Los Andes University#[sup &dagger;] and Kangaroo Foundation#[sup &Dagger;]
+
+            p.tiny
+              a(href='http://johnguerra.co/slides/kangarooBabies', target='_blank') http://johnguerra.co/slides/kangarooBabies
+
+            div.left.logo
+              a(href="http://www.uniandes.edu.co/")
+                img.logo(src="images/universidad_de_los_andes_logo@2x.png" alt="Los Andes University")
+            div.right.logo
+              a(href="https://datascience.berkeley.edu/")
+                img.logo(src="images/UC_Berkeley_wordmark_cal_gold.png" alt="Kangaroo Foundation Logo")
+
+        //- #########################  The model
+        section
+          section
+            h1 4 steps Model
+
+          section
+            h2 Time based events
+
+            ul
+              li.fragment Presidential election
+              li.fragment Presidential election
+              li.fragment Presidential election
+
+          section
+            h2 4 steps Model
+            p Diagram model
+
+          section
+            h2 Example applications
+            p Applying the model to the problems
+
+        //- #########################  Kangaroo
+        section
+          section
+            h1 Kangaroo
+
+          section
+            h2 The problem
+
+          section
+            h2 Kangaroo Foundation
+
+          section
+            h2 The Experts
+
+          section
+            h2 The Data
+
+          section
+            h2 The Tasks
+
+          section
+            h2 Insights
+
+        //- #########################  The viz
+        section
+          section
+            h1 Viz
+
+          section
+            h2 Femton 1 child
+          section
+            h2 Femton 10k children
+          section
+            h2 + OMS
+          section
+            h2 Normalization
+
+          section
+            h2 Our viz
+
+        section
+          section
+            h3.demo Thank you!
+            div.left
+              ul
+                li Model
+                li Viz
+                li Use case (Insights)
+            div.right
+              p Video demo
+
+
+
+    script(src="js/head.min.js")
+    script(src="js/reveal.js")
+    script(src="js/d3.v4.min.js")
+    script(src="js/networkCanvasChart.js")
+    script(src="js/netClustering.js")
+    script(src="js/forceInABoxv4.js")
+    script(src="js/ScrollableHairball.js")
+    script(src="js/ScrollableTips.js")
+    script(src="js/makeScrollable.js")
+
+    script.
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: Reveal.navigateNext,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Parallax background image
+        parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+        // Parallax background size
+        parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+        // Number of pixels to move the parallax background per slide
+        // - Calculated automatically unless specified
+        // - Set to 0 to disable movement along an axis
+        parallaxBackgroundHorizontal: null,
+        parallaxBackgroundVertical: null,
+
+        // Options which are passed into marked
+        // See https://github.com/chjj/marked#options-1
+        markdown: {
+          smartypants: true
+        },
+
+        dependencies: [
+          // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+          // Interpret Markdown in <section> elements
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+          // Syntax highlight for <code> elements
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+          // Zoom in and out with Alt+click
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+
+          // Speaker notes
+          { src: 'plugin/notes/notes.js', async: true },
+
+          // MathJax
+          { src: 'plugin/math/math.js', async: true }
+        ],
+
+      });
+
+    //-
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72531610-1', 'auto');
+      ga('send', 'pageview');
+
