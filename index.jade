@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Untangling the Hairball
+    title Visual tools for the exploration of growth in kangaroo infants
     link(rel="stylesheet", href="css/reveal.css")
     link(rel="stylesheet", href="css/theme/white.css")
     link(rel="stylesheet", href="css/main.css")
@@ -11,7 +11,7 @@ html
 
     meta(charset='utf-8')
     meta(name='author', content='Deisy Díaz, John Alexis Guerra Gomez')
-    meta(name='description', content="Kangaroo Babies")
+    meta(name='description', content="Visual tools for the exploration of growth data in a cohort of kangaroo infants during their first year of life")
     meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui")
 
     style.
@@ -38,12 +38,12 @@ html
 
         section
           section
-            h1 Kangaroo Babies
+            h3 Visual tools for the exploration of growth data in a cohort of kangaroo infants during their first year of life
 
             p.authors.
-              Deisy Díaz#[sup &dagger;], #[a(href='http://johnguerra.co/', target='_blank') John A. Guerra Gómez]#[sup &dagger;], Julieta#[sup &Dagger;], Nathalie#[sup &Dagger;], Tiberio#[sup &dagger;]
+              Deisy Díaz#[sup &dagger;], #[a(href='http://johnguerra.co/', target='_blank') John A. Guerra Gómez]#[sup &dagger;], Julieta Villegas#[sup &Dagger;], Nathalie Charpak#[sup &Dagger;], José Tiberio Hernández#[sup &dagger;]
               #[br]
-              Los Andes University#[sup &dagger;] and Kangaroo Foundation#[sup &Dagger;]
+              Los Andes University#[sup &dagger;] and Fundación Canguro#[sup &Dagger;]
 
             p.tiny
               a(href='http://johnguerra.co/slides/kangarooBabies', target='_blank') http://johnguerra.co/slides/kangarooBabies
@@ -53,51 +53,134 @@ html
                 img.logo(src="images/universidad_de_los_andes_logo@2x.png" alt="Los Andes University")
             div.right.logo
               a(href="https://datascience.berkeley.edu/")
-                img.logo(src="images/UC_Berkeley_wordmark_cal_gold.png" alt="Kangaroo Foundation Logo")
+                img.logo(src="images/fundacion_canguro_logo.jpg" alt="Kangaroo Foundation Logo")
+
+        //- #########################  Content 
+        section(style="text-align:left")  
+          h2(style="text-align:center") Content
+          h6 Proposed Process Model
+          ul(style="font-size:20pt")
+            li Time based events
+            li 4 steps Model
+            li Examples applications
+
+          h6 Kangaroo babies
+          ul(style="font-size:20pt")
+            li Problem Kangaroo babies
+            li “Fundacion Canguro” or Kangaroo Foundation
+            li Data set
+            li Visual analytics task
+            li Insights
+          h6 A Contribution with Time-series
+          h6 Conclusions        
+
 
         //- #########################  The model
         section
+
           section
-            h1 4 steps Model
+            h1 Proposed Process Model
 
           section
             h2 Time based events
 
             ul
               li.fragment Presidential election
-              li.fragment Presidential election
-              li.fragment Presidential election
+              li.fragment A common factory production of goods
+              li.fragment Write a book
+              li.fragment Evolution of a disease such as diabetes
 
           section
-            h2 4 steps Model
-            p Diagram model
+            h3 4 steps Model
+            img(src="images/steps_model.jpg" alt="4 steps model")
 
           section
             h2 Example applications
             p Applying the model to the problems
 
+          section
+            h3 Presidential election
+            img(src="images/steps_model_example_1.jpg" alt="example presidential election")
+          
+          section
+            h3 Evolution of a disease such as diabetes
+            img(src="images/steps_model_example_2.jpg" alt="example diabetes")      
+
         //- #########################  Kangaroo
         section
           section
-            h1 Kangaroo
+            h1 Kangaroo babies
 
           section
             h2 The problem
+            ul
+              li.fragment(style="text-align:justify;font-size:20pt") Almost 1 million children die each year due to complications of preterm birth. Many survivors face a lifetime of disability, including learning disabilities and visual and hearing problems.
+              li.fragment(style="text-align:justify;font-size:20pt") Hypothermia and Hypoglycaemia are a great risk, also the more premature the baby, the greater the risk of respiratory distress syndrome.
+              li.fragment(style="text-align:justify;font-size:20pt") The premature baby is more susceptible to neonatal jaundice.
+              li.fragment(style="text-align:justify;font-size:20pt") They are susceptible to infection and to necrotising enteritis.
+              li.fragment(style="text-align:justify;font-size:20pt") They are susceptible to intraventricular brain haemorrhage with serious long-term effects.
+            
+          section    
+            img(src="images/the_facts.jpg" alt="example diabetes")
 
           section
-            h2 Kangaroo Foundation
-
+            h2 Fundación Canguro
+            p The “Fundación Canguro” or Kangaroo Foundation created in 1994 in Colombia has as the most important goal pursued to continue the evaluation of the KMC(Kangaroo Mother Care) and to facilitate the dissemination and transference of knowledge and technology associated with this technique, to all those who might benefit from it, with the highest possible quality standards.
+            
+          section  
+            div.left
+              img(src="images/KMC.jpg" alt="example diabetes")
+            div.right(style="text-align:justify;font-size:25pt") Kangaroo mother care: is a method invented for the Doctor Edgar Rey Sanabria where baby is carried by the mother with skin to skin contact 24 hr a day. The baby is held in a strict up-right position, between the mother’s breasts and under her clothes. Mothers are employed as “incubators” and as the main source of food and stimulation.
+                          
           section
             h2 The Experts
+            img(src="images/experts.jpg" alt="Fundación Canguro experts")
+            p Dr. Nathalie Charpak, Pediatrician and maximum exponent of the KMC in the world.
+            p Julieta Villegas, Master’s degree in Health Policy, Planning and Financing.
 
           section
             h2 The Data
+            img(src="images/words_data.jpg" alt="avalaible data")
 
           section
-            h2 The Tasks
+            h2 The Task
+            p The goal of our tool was to be able to evaluate the growth process during the first year of life of premature infants and to identify the influence of variables like the mother’s age, education, weight, height or income in the process. 
 
+          section
+            h3 Proposed Process Model in kangaroo babies' context 
+            img(src="images/steps_model_4.jpg" alt="4 steps model in kangaroo babies")
+
+          section
+            h3 1- Environment (before the event)
+            img(src="images/environment.jpg" alt="step 1 - environment")    
+
+          section
+            h3 2- Pregnancy (development of the event)
+            img(src="images/pregnancy.jpg" alt="step 2 - pregnancy")      
+
+          section
+            h3 3- Birth (the event)
+            img(src="images/birth.jpg" alt="step 3 - birth") 
+
+          section
+            h3 4- Growth (after the event)
+            img(src="images/growth.jpg" alt="step 4 - Growth")       
+              
           section
             h2 Insights
+
+          section
+            h5 Selection - low per capita income  
+            img(src="images/insight_1.jpg" alt="low per capita income") 
+
+          section
+            h5 Selection - high per capita income  
+            img(src="images/insight_2.jpg" alt="high per capita income")     
+
+           section
+            h5 Selection - high per capita income  
+            img(src="images/insight_3.jpg" alt="feeding trends")
+            p(style="text-align:justify;font-size:20pt") A) Feeding trends 1993-2010. B) Feeding trends 2011-2015. Vertically: feeding’s types: exclusive breastfeeding (EBF), mixed feeding (BF+F), exclusive artificial formula milk (F). Horizontally: different ages during preterm babies’ first year        
 
         //- #########################  The viz
         section
@@ -105,9 +188,9 @@ html
             h1 Viz
 
           section
-            h2 Femton 1 child
+            h2 Fenton 1 child
           section
-            h2 Femton 10k children
+            h2 Fenton 10k children
           section
             h2 + OMS
           section

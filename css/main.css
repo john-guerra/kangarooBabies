@@ -10,8 +10,8 @@
 }
 .reveal p,
 .reveal ol,
-.reveal ul,
-.reveal li,
+/*.reveal ul,
+.reveal li,*/
 .reveal blockquote,
 .reveal pre {
   margin-top: 0.75em;
@@ -24,7 +24,7 @@
 .reveal h5,
 .reveal h6 {
   margin-top: 0.25em;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.25em;
 }
 .reveal h1.demo,
 .reveal h2.demo,
