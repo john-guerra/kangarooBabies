@@ -112,8 +112,17 @@ html
             h1 Kangaroo babies
 
           section
-            h2 The problem
-            ul
+            h3 The problem
+            div.left
+              img(src="" alt="Kangaroo baby")
+            div.right
+              ul
+                li.fragment 1 Million preterm babies die (cite)
+                li.fragment Hypothermia
+                li.fragment Hypoglycaemia
+                li.fragment Jaundice
+                li.fragment Many other risks
+            aside.notes.
               li.fragment(style="text-align:justify;font-size:20pt") Almost 1 million children die each year due to complications of preterm birth. Many survivors face a lifetime of disability, including learning disabilities and visual and hearing problems.
               li.fragment(style="text-align:justify;font-size:20pt") Hypothermia and Hypoglycaemia are a great risk, also the more premature the baby, the greater the risk of respiratory distress syndrome.
               li.fragment(style="text-align:justify;font-size:20pt") The premature baby is more susceptible to neonatal jaundice.
@@ -121,20 +130,41 @@ html
               li.fragment(style="text-align:justify;font-size:20pt") They are susceptible to intraventricular brain haemorrhage with serious long-term effects.
 
           section
+            h3 In Colombia
+            p 12% of births are preterm (cite)
             img(src="images/the_facts.jpg" alt="example diabetes")
 
           section
-            h2 Fundación Canguro
-            p The “Fundación Canguro” or Kangaroo Foundation created in 1994 in Colombia has as the most important goal pursued to continue the evaluation of the KMC(Kangaroo Mother Care) and to facilitate the dissemination and transference of knowledge and technology associated with this technique, to all those who might benefit from it, with the highest possible quality standards.
+            h2 The solution?
+            div.left
+              ul
+                li
+                  //- TODO Link to foundation
+                  a(href="") Kangaroo Mother Care (KMC)
+                li The mother is the best incubator!!!!
+                li.fragment Hold the baby close to the body
+                li.fragment Protects from infections
+                li.fragment Deeper family bonds
+            div.right
+              img(src="images/KMC.jpg" alt="Kangaroo Mother Care example")
+
+
+            aside.notes.
+              Kangaroo mother care: is a method invented for the Doctor Edgar Rey Sanabria where baby is carried by the mother with skin to skin contact 24 hr a day. The baby is held in a strict up-right position, between the mother’s breasts and under her clothes. Mothers are employed as “incubators” and as the main source of food and stimulation.
+
+
 
           section
-            div.left
-              img(src="images/KMC.jpg" alt="example diabetes")
-            div.right(style="text-align:justify;font-size:25pt") Kangaroo mother care: is a method invented for the Doctor Edgar Rey Sanabria where baby is carried by the mother with skin to skin contact 24 hr a day. The baby is held in a strict up-right position, between the mother’s breasts and under her clothes. Mothers are employed as “incubators” and as the main source of food and stimulation.
+            //- TODO Link
+            a(href="KangarooFoundationpage")
+            h3 Kangaroo Foundation
+            p Researches and promotes the best practices of the Kangaroo Mother Care method
+            aside.notes.
+              The “Fundación Canguro” or Kangaroo Foundation created in 1994 in Colombia has as the most important goal pursued to continue the evaluation of the KMC(Kangaroo Mother Care) and to facilitate the dissemination and transference of knowledge and technology associated with this technique, to all those who might benefit from it, with the highest possible quality standards.
 
           section
             h2 The Experts
-            img(src="images/experts.jpg" alt="Fundación Canguro experts")
+            //- img(src="images/experts.jpg" alt="Fundación Canguro experts")
             p Dr. Nathalie Charpak, Pediatrician and maximum exponent of the KMC in the world.
             p Julieta Villegas, Master’s degree in Health Policy, Planning and Financing.
 
@@ -143,11 +173,16 @@ html
             img(src="images/words_data.jpg" alt="avalaible data")
 
           section
-            h2 The Task
-            p The goal of our tool was to be able to evaluate the growth process during the first year of life of premature infants and to identify the influence of variables like the mother’s age, education, weight, height or income in the process.
+            h2 The Tasks
+            ul
+              li.fragment Evaluate the growth process during the first year of life
+              li.fragment Identify the influence on the growth process of mother's background
+
+            aside.notes.
+              - mother’s age, education, weight, height or income in the process
 
           section
-            h3 Proposed Process Model in kangaroo babies' context
+            h3 Back to the model
             img(src="images/steps_model_4.jpg" alt="4 steps model in kangaroo babies")
 
           section
@@ -170,6 +205,15 @@ html
             h2 Insights
 
           section
+            h2 How does the family's income level affect the population?
+            p Stage 1 of the model
+
+          section.demo
+            iframe.demo(src="http://treeversity.cattlab.umd.edu")
+            aside.notes.
+              low income: Younger mothers, lower education, non-desired birth, no first babies
+              high income: Older mothers, Higher education, desired birth
+          section
             h5 Selection - low per capita income
             img(src="images/insight_1.jpg" alt="low per capita income")
 
@@ -180,7 +224,9 @@ html
            section
             h5 Selection - high per capita income
             img(src="images/insight_3.jpg" alt="feeding trends")
-            p(style="text-align:justify;font-size:20pt") A) Feeding trends 1993-2010. B) Feeding trends 2011-2015. Vertically: feeding’s types: exclusive breastfeeding (EBF), mixed feeding (BF+F), exclusive artificial formula milk (F). Horizontally: different ages during preterm babies’ first year
+            aside.notes.
+              //- p(style="text-align:justify;font-size:20pt")
+              A) Feeding trends 1993-2010. B) Feeding trends 2011-2015. Vertically: feeding’s types: exclusive breastfeeding (EBF), mixed feeding (BF+F), exclusive artificial formula milk (F). Horizontally: different ages during preterm babies’ first year
 
         //- #########################  The viz
         section
