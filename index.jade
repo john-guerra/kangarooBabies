@@ -25,6 +25,13 @@ html
 
         font-family: 'Quattrocento', sans-serif;
       }
+      .jsgif{
+        max-width:800px;
+      }
+      .jsgif>canvas{
+        width:800px;
+      }
+
   body
 
     div.reveal
@@ -131,7 +138,9 @@ html
 
           section
             h3 In Colombia
-            h6 12% of births are preterm (cite)
+            h6 35% Preterm birth complications - leading cause of neonatal deaths
+              a(href="https://www.healthynewbornnetwork.org/country/columbia/" target="_blank").
+                (healthy newborn network)
             img(src="images/colombia.jpg" alt="preterm babies in Colombia")
 
           section
@@ -140,7 +149,7 @@ html
               ul
                 li
                   //- TODO Link to foundation
-                  a(href="http://www.who.int/maternal_child_adolescent/documents/9241590351/en/") Kangaroo Mother Care (KMC)
+                  a(href="http://www.who.int/maternal_child_adolescent/documents/9241590351/en/" target="_blank") Kangaroo Mother Care (KMC)
                 li The mother is the best incubator!!!!
                 li.fragment Hold the baby close to the body
                 li.fragment Protects from infections
@@ -159,7 +168,9 @@ html
             a(href="KangarooFoundationpage")
             h3 Kangaroo Foundation
             p Researches and promotes the best practices of the Kangaroo Mother Care method
-            img(src="images/fundacion_canguro_logo.jpg" alt="Kangaroo Foundation")
+            a(href="http://www.fundacioncanguro.co/" target="_blank")
+              img(src="images/header_page_kf.jpg" alt="Kangaroo Foundation")
+
             aside.notes.
               The “Fundación Canguro” or Kangaroo Foundation created in 1994 in Colombia has as the most important goal pursued to continue the evaluation of the KMC(Kangaroo Mother Care) and to facilitate the dissemination and transference of knowledge and technology associated with this technique, to all those who might benefit from it, with the highest possible quality standards.
 
@@ -184,7 +195,7 @@ html
 
           section
             h3 Back to the model
-            img(src="images/steps_model_4.jpg" alt="4 steps model in kangaroo babies")
+            img(src="images/steps_model_example_3.jpg" alt="4 steps model in kangaroo babies")
 
           section
             h4 1- Environment (before the event)
@@ -214,26 +225,40 @@ html
             aside.notes.
               low income: Younger mothers, lower education, non-desired birth, no first babies
               high income: Older mothers, Higher education, desired birth
-          section
+          //-section
             h5 Selection - low per capita income
             img(src="images/insight_1.jpg" alt="low per capita income")
 
-          section
+          //-section
             h5 Selection - high per capita income
             img(src="images/insight_2.jpg" alt="high per capita income")
 
-           section
+          //-section
             h5 Selection - high per capita income
             img(src="images/insight_3.jpg" alt="feeding trends")
-            aside.notes.
-              //- p(style="text-align:justify;font-size:20pt")
+            p(style="text-align:justify;font-size:20pt").
               A) Feeding trends 1993-2010. B) Feeding trends 2011-2015. Vertically: feeding’s types: exclusive breastfeeding (EBF), mixed feeding (BF+F), exclusive artificial formula milk (F). Horizontally: different ages during preterm babies’ first year
 
         //- #########################  The viz
+        script(src="js/libgif.js")
+        script(src="js/rubbable.js")  
+
         section
           section
-            h5 A Contribution with Time-series
-            img(src="images/animationTimeSeries.gif" alt="time serie")
+            h1 A Contribution with Time-series
+
+          section
+            center
+              img(id="animacion" src="images/inicioAnimacion.jpg" rel:auto_play="0" rel:animated_src="images/animacion.gif")
+            a(href="javascript:;" onmousedown="sup1.pause(); return false;" style="font-size:10pt") | Pause | 
+            a(href="javascript:;" onmousedown="sup1.play(); return false;" style="font-size:10pt") Play | 
+            a(href="javascript:;" onmousedown="sup1.move_to(0); return false;" style="font-size:10pt") Restart | 
+            a(href="javascript:;" onmousedown="sup1.move_relative(1); return false;" style="font-size:10pt") Step forward | 
+            a(href="javascript:;" onmousedown="sup1.move_relative(-1); return false;" style="font-size:10pt") Step back | 
+            script.
+              var sup1 = new SuperGif({ gif: document.getElementById('animacion'), loop_mode: false } );
+              sup1.load();
+            
 
 
         section
