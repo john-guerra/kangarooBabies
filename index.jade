@@ -6,32 +6,19 @@ html
     link(rel="stylesheet", href="css/theme/white.css")
     link(rel="stylesheet", href="css/main.css")
     link(rel="stylesheet", href="css/scrollable.css")
-    link(rel="stylesheet", href="css/scrollableHairball.css")
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Didact+Gothic|Arimo")
 
     meta(charset='utf-8')
     meta(name='author', content='Deisy Díaz, John Alexis Guerra Gomez')
     meta(name='description', content="Visual tools for the exploration of growth data in a cohort of kangaroo infants during their first year of life")
     meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui")
-
     style.
-      .reveal h1,
-      .reveal h2,
-      .reveal h3,
-      .reveal h4 {
-        font-family: 'Oswald', serif;
-      }
-      .reveal {
-
-        font-family: 'Quattrocento', sans-serif;
-      }
       .jsgif{
         max-width:800px;
       }
       .jsgif>canvas{
         width:800px;
       }
-
   body
 
     div.reveal
@@ -45,13 +32,14 @@ html
 
         section
           section
-            h3 Visual tools for the exploration of growth data in a cohort of kangaroo infants during their first year of life
+            h3 Analyzing Growth Data in Preterm Babies
+              small Visual Analytics for Time Based Events
 
-            p.authors.
-              Deisy Díaz#[sup &dagger;], #[a(href='http://johnguerra.co/', target='_blank') John A. Guerra Gómez]#[sup &dagger;], Julieta Villegas#[sup &Dagger;], Nathalie Charpak#[sup &Dagger;], José Tiberio Hernández#[sup &dagger;]
-              #[br]
-              Los Andes University#[sup &dagger;] and Fundación Canguro#[sup &Dagger;]
+            p.authors Deisy Díaz#[sup &dagger;], #[a(href='http://johnguerra.co/', target='_blank') John A. Guerra Gómez]#[sup &dagger;], Julieta Villegas#[sup &Dagger;], #[br] Nathalie Charpak#[sup &Dagger;], José Tiberio Hernández#[sup &dagger;]
+              br
+              span.small Los Andes University#[sup &dagger;] and Kangaroo Foundation#[sup &Dagger;]
 
+            br
             p.tiny
               a(href='http://johnguerra.co/slides/kangarooBabies', target='_blank') http://johnguerra.co/slides/kangarooBabies
 
@@ -63,23 +51,29 @@ html
                 img.logo(src="images/fundacion_canguro_logo.jpg" alt="Kangaroo Foundation Logo")
 
         //- #########################  Content
-        section(style="text-align:left")
-          h2(style="text-align:center") Content
-          h6 Proposed Process Model
-          ul(style="font-size:20pt")
-            li Time based events
-            li 4 steps Model
-            li Examples applications
+        section
+          h2 Agenda
+          ul
+            li.fragment Proposed Process Model
+            li.fragment Preterm babies
+            li.fragment Viz for measuring babies' growth
 
-          h6 Kangaroo babies
-          ul(style="font-size:20pt")
-            li Problem Kangaroo babies
-            li “Fundacion Canguro” or Kangaroo Foundation
-            li Data set
-            li Visual analytics task
-            li Insights
-          h6 A Contribution with Time-series
-          h6 Conclusions
+
+          //- h6 Proposed Process Model
+          //- ul(style="font-size:20pt")
+          //-   li Time based events
+          //-   li 4 steps Model
+          //-   li Examples applications
+
+          //- h6 Kangaroo babies
+          //- ul(style="font-size:20pt")
+          //-   li Problem Kangaroo babies
+          //-   li “Fundacion Canguro” or Kangaroo Foundation
+          //-   li Data set
+          //-   li Visual analytics task
+          //-   li Insights
+          //- h6 A Contribution with Time-series
+          //- h6 Conclusions
 
 
         //- #########################  The model
@@ -89,7 +83,7 @@ html
             h1 Proposed Process Model
 
           section
-            h2 Time based events
+            h2 Time Based Events
 
             ul
               li.fragment Presidential election
@@ -101,22 +95,22 @@ html
             h3 4 steps Model
             img(src="images/steps_model.jpg" alt="4 steps model")
 
-          section
-            h2 Example applications
-            p Applying the model to the problems
+          //- section
+          //-   h2 Example applications
+          //-   p Applying the model to the problems
 
           section
-            h3 Presidential election
+            h3 Presidential Election
             img(src="images/steps_model_example_1.jpg" alt="example presidential election")
 
           section
-            h3 Evolution of a disease such as diabetes
+            h3 Evolution of a Disease (Diabetes)
             img(src="images/steps_model_example_2.jpg" alt="example diabetes")
 
         //- #########################  Kangaroo
         section
           section
-            h1 Kangaroo babies
+            h1 Preterm (Kangaroo) Babies
 
           section
             h3 The problem
@@ -124,13 +118,9 @@ html
               img(src="images/image_baby.jpg" alt="Kangaroo baby")
             div.right
               ul
-                li.fragment Nearly 1 million preterm babies die in 2015.
-                  a(href="http://www.who.int/mediacentre/factsheets/fs363/en/", target="_blank") (WHO | preterm birth)
-                li.fragment Hypothermia
-                li.fragment Ocular complications
-                li.fragment Feeding intolerance
-                li.fragment Infectious as meningitis
-                li.fragment Many other risks
+                li.fragment Nearly 1 million preterm babies died in 2015#[sup #[a.small(href="http://www.who.int/mediacentre/factsheets/fs363/en/", target="_blank") *]].
+
+                li.fragment Hypothermia, Ocular complications, Feeding intolerance, Infectious as meningitis.
             aside.notes.
               An estimated 15 million babies are born too early every year. That is more than 1 in 10 babies. Almost 1 million children die each year due to complications of preterm birth. Many survivors face a lifetime of disability, including learning disabilities and visual and hearing problems.
               Globally, prematurity is the leading cause of death in children under the age of 5. And in almost all countries with reliable data, preterm birth rates are increasing.
@@ -138,10 +128,10 @@ html
 
           section
             h3 In Colombia
-            h6 35% Preterm birth complications - leading cause of neonatal deaths
-              a(href="https://www.healthynewbornnetwork.org/country/columbia/" target="_blank").
-                (healthy newborn network)
-            img(src="images/colombia.jpg" alt="preterm babies in Colombia")
+            div.left
+              p Preterm birth complications is the leading cause of neonatal deaths (35% of total)#[sup #[a(href="https://www.healthynewbornnetwork.org/country/columbia/" target="_blank") *]]
+            div.right
+              img(src="images/colombia.jpg" alt="preterm babies in Colombia")
 
           section
             h2 The solution?
@@ -151,22 +141,25 @@ html
                   //- TODO Link to foundation
                   a(href="http://www.who.int/maternal_child_adolescent/documents/9241590351/en/" target="_blank") Kangaroo Mother Care (KMC)
                 li The mother is the best incubator!!!!
-                li.fragment Hold the baby close to the body
-                li.fragment Protects from infections
-                li.fragment Deeper family bonds
+                //- li.fragment Hold the baby close to the body
+                //- li.fragment Protects from infections
+                //- li.fragment Deeper family bonds
             div.right
               img(src="images/KMC.jpg" alt="Kangaroo Mother Care example")
 
 
             aside.notes.
+              li.fragment Hold the baby close to the body
+              li.fragment Protects from infections
+              li.fragment Deeper family bonds
               Kangaroo mother care: is a method invented for the Doctor Edgar Rey Sanabria where baby is carried by the mother with skin to skin contact 24 hr a day. The baby is held in a strict up-right position, between the mother’s breasts and under her clothes. Mothers are employed as “incubators” and as the main source of food and stimulation.
 
 
 
           section
             //- TODO Link
-            a(href="KangarooFoundationpage")
-            h3 Kangaroo Foundation
+            a(href="http://www.fundacioncanguro.co/" target="_blank")
+              h3 Kangaroo Foundation
             p Researches and promotes the best practices of the Kangaroo Mother Care method
             a(href="http://www.fundacioncanguro.co/" target="_blank")
               img(src="images/header_page_kf.jpg" alt="Kangaroo Foundation")
@@ -228,8 +221,8 @@ html
             p Stage 4 of the model
 
           section
-            video(src="videos/DemoVA_insight_2.mp4" type="video/mp4" controls)  
-              
+            video(src="videos/DemoVA_insight_2.mp4" type="video/mp4" controls)
+
           //-section.demo
             iframe.demo(src="http://treeversity.cattlab.umd.edu")
             aside.notes.
@@ -251,7 +244,7 @@ html
 
         //- #########################  The viz
         script(src="js/libgif.js")
-        script(src="js/rubbable.js")  
+        script(src="js/rubbable.js")
 
         section
           section
@@ -260,39 +253,31 @@ html
           section
             center
               img(id="animacion" src="images/inicioAnimacion.jpg" rel:auto_play="0" rel:animated_src="images/animacion.gif")
-            a(href="javascript:;" onmousedown="sup1.pause(); return false;" style="font-size:10pt") | Pause | 
-            a(href="javascript:;" onmousedown="sup1.play(); return false;" style="font-size:10pt") Play | 
-            a(href="javascript:;" onmousedown="sup1.move_to(0); return false;" style="font-size:10pt") Restart | 
-            a(href="javascript:;" onmousedown="sup1.move_relative(1); return false;" style="font-size:10pt") Step forward | 
-            a(href="javascript:;" onmousedown="sup1.move_relative(-1); return false;" style="font-size:10pt") Step back | 
+            a(href="javascript:;" onmousedown="sup1.pause(); return false;" style="font-size:10pt") | Pause |
+            a(href="javascript:;" onmousedown="sup1.play(); return false;" style="font-size:10pt") Play |
+            a(href="javascript:;" onmousedown="sup1.move_to(0); return false;" style="font-size:10pt") Restart |
+            a(href="javascript:;" onmousedown="sup1.move_relative(1); return false;" style="font-size:10pt") Step forward |
+            a(href="javascript:;" onmousedown="sup1.move_relative(-1); return false;" style="font-size:10pt") Step back |
             script.
               var sup1 = new SuperGif({ gif: document.getElementById('animacion'), loop_mode: false } );
               sup1.load();
-            
+
 
 
         section
-          section
-            h3.demo Thank you!
-            div.left
-              ul
-                li Model
-                li Viz
-                li Use case (Insights)
-            div.right
-              p Video demo
+          section#thankyou(data-background-video-muted data-background-video="videos/DemoVA_insight_1.mp4")
+
+            h3.demo Take home message
+            ul
+              li.fragment Proposed Process Model
+              li.fragment Preterm babies
+              li.fragment Viz for measuring babies' growth
 
 
 
     script(src="js/head.min.js")
     script(src="js/reveal.js")
     script(src="js/d3.v4.min.js")
-    script(src="js/networkCanvasChart.js")
-    script(src="js/netClustering.js")
-    script(src="js/forceInABoxv4.js")
-    script(src="js/ScrollableHairball.js")
-    script(src="js/ScrollableTips.js")
-    script(src="js/makeScrollable.js")
 
     script.
       Reveal.initialize({
