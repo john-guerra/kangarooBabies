@@ -257,20 +257,57 @@ html
           section
             h1 A Contribution with Time-series
 
-          section
+          //--section
             center
               img(id="animacion" src="images/inicioAnimacion.jpg" rel:auto_play="0" rel:animated_src="images/animacion.gif")
-            a(href="javascript:;" onmousedown="sup1.pause(); return false;" style="font-size:10pt") | Pause | 
-            a(href="javascript:;" onmousedown="sup1.play(); return false;" style="font-size:10pt") Play | 
-            a(href="javascript:;" onmousedown="sup1.move_to(0); return false;" style="font-size:10pt") Restart | 
-            a(href="javascript:;" onmousedown="sup1.move_relative(1); return false;" style="font-size:10pt") Step forward | 
-            a(href="javascript:;" onmousedown="sup1.move_relative(-1); return false;" style="font-size:10pt") Step back | 
+            a(href="javascript:;" onmousedown="sup1.pause(); return false;" style="font-size:12pt") | Pause | 
+            a(href="javascript:;" onmousedown="sup1.play(); return false;" style="font-size:12pt") Play | 
+            a(href="javascript:;" onmousedown="sup1.move_to(0); return false;" style="font-size:12pt") Restart | 
+            a(href="javascript:;" onmousedown="sup1.move_relative(1); return false;" style="font-size:12pt") Step forward | 
+            a(href="javascript:;" onmousedown="sup1.move_relative(-1); return false;" style="font-size:12pt") Step back | 
             script.
               var sup1 = new SuperGif({ gif: document.getElementById('animacion'), loop_mode: false } );
               sup1.load();
-            
+          
+          section
+            center
+              img(id="animacion_1" src="images/inicioAnimacion.jpg" rel:auto_play="0" rel:animated_src="images/animacion_part_1.gif")
+            a(href="javascript:;" onmousedown="sup2.pause(); return false;" style="font-size:12pt") | Pause | 
+            a(href="javascript:;" onmousedown="sup2.play(); return false;" style="font-size:12pt") Play | 
+            a(href="javascript:;" onmousedown="sup2.move_to(0); return false;" style="font-size:12pt") Restart | 
+            a(href="javascript:;" onmousedown="sup2.move_relative(1); return false;" style="font-size:12pt") Step forward | 
+            a(href="javascript:;" onmousedown="sup2.move_relative(-1); return false;" style="font-size:12pt") Step back | 
+            script.
+              var sup2 = new SuperGif({ gif: document.getElementById('animacion_1'), loop_mode: false } );
+              sup2.load();    
 
+          section
+            center
+              img(id="animacion_2" src="images/inicioAnimacion_2.jpg" rel:auto_play="0" rel:animated_src="images/animacion_part_2.gif")
+            a(href="javascript:;" onmousedown="sup3.pause(); return false;" style="font-size:12pt") | Pause | 
+            a(href="javascript:;" onmousedown="sup3.play(); return false;" style="font-size:12pt") Play | 
+            a(href="javascript:;" onmousedown="sup3.move_to(0); return false;" style="font-size:12pt") Restart | 
+            a(href="javascript:;" onmousedown="sup3.move_relative(1); return false;" style="font-size:12pt") Step forward | 
+            a(href="javascript:;" onmousedown="sup3.move_relative(-1); return false;" style="font-size:12pt") Step back | 
+            script.
+              var sup3 = new SuperGif({ gif: document.getElementById('animacion_2'), loop_mode: false } );
+              sup3.load();  
+          
+          section
+            center
+              img(id="animacion_3" src="images/inicioAnimacion_3.jpg" rel:auto_play="0" rel:animated_src="images/animacion_part_3.gif")
+            a(href="javascript:;" onmousedown="sup4.pause(); return false;" style="font-size:12pt") | Pause | 
+            a(href="javascript:;" onmousedown="sup4.play(); return false;" style="font-size:12pt") Play | 
+            a(href="javascript:;" onmousedown="sup4.move_to(0); return false;" style="font-size:12pt") Restart | 
+            a(href="javascript:;" onmousedown="sup4.move_relative(1); return false;" style="font-size:12pt") Step forward | 
+            a(href="javascript:;" onmousedown="sup4.move_relative(-1); return false;" style="font-size:12pt") Step back | 
+            script.
+              var sup4 = new SuperGif({ gif: document.getElementById('animacion_3'), loop_mode: false } );
+              sup4.load();      
 
+          section  
+            video(src="videos/DemoVA_timeSeries.mp4" type="video/mp4" controls)
+    
         section
           section
             h3.demo Thank you!
