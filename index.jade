@@ -19,6 +19,14 @@ html
       .jsgif>canvas{
         width:800px;
       }
+      .img-disc-encabezado {
+          width: 150px;
+          height: 150px;
+          vertical-align: middle;
+      }
+      .img-circle {
+          border-radius: 50%;
+      }
   body
 
     div.reveal
@@ -38,8 +46,16 @@ html
             p.authors Deisy Díaz#[sup &dagger;], #[a(href='http://johnguerra.co/', target='_blank') John A. Guerra Gómez]#[sup &dagger;], Julieta Villegas#[sup &Dagger;], #[br] Nathalie Charpak#[sup &Dagger;], José Tiberio Hernández#[sup &dagger;]
               br
               span.small Los Andes University#[sup &dagger;] and Kangaroo Foundation#[sup &Dagger;]
-
-            br
+            div
+              img.img-circle.img-disc-encabezado(src="images/autor_5.jpg" alt="Deisy Díaz")
+              |  
+              img.img-circle.img-disc-encabezado(src="images/autor_1.jpg" alt="John Alexis Guerra")
+              |  
+              img.img-circle.img-disc-encabezado(src="images/autor_4.jpg" alt="Julieta Villegas")
+              |  
+              img.img-circle.img-disc-encabezado(src="images/autor_3.jpg" alt="Nathalie Charpak")
+              |  
+              img.img-circle.img-disc-encabezado(src="images/autor_2.jpg" alt="Tiberio Hernández") 
             p.tiny
               a(href='http://johnguerra.co/slides/kangarooBabies', target='_blank') http://johnguerra.co/slides/kangarooBabies
 
@@ -220,6 +236,21 @@ html
             h2 Is there a change in the nutritional pattern of the infants after the nationwide law to increase the maternal leave introduced in 2011?
             p Stage 4 of the model
 
+          script(src="js/libgif.js")
+          script(src="js/rubbable.js")  
+
+          section
+            center
+              img(id="animacion_licencia" src="images/inicioAnimacionLicencia.jpg" rel:auto_play="0" rel:animated_src="images/animacion_licencia_maternidad.gif")
+            a(href="javascript:;" onmousedown="sup5.play(); return false;" style="font-size:12pt") | Play 
+            a(href="javascript:;" onmousedown="sup5.pause(); return false;" style="font-size:12pt") | Pause 
+            a(href="javascript:;" onmousedown="sup5.move_to(0); return false;" style="font-size:12pt") | Restart 
+            a(href="javascript:;" onmousedown="sup5.move_relative(-1); return false;" style="font-size:12pt") | Step back 
+            a(href="javascript:;" onmousedown="sup5.move_relative(1); return false;" style="font-size:12pt") | Step forward |
+            script.
+              var sup5 = new SuperGif({ gif: document.getElementById('animacion_licencia'), loop_mode: false } );
+              sup5.load();
+
           section
             video(src="videos/DemoVA_insight_2.mp4" type="video/mp4" controls)
 
@@ -243,9 +274,7 @@ html
               A) Feeding trends 1993-2010. B) Feeding trends 2011-2015. Vertically: feeding’s types: exclusive breastfeeding (EBF), mixed feeding (BF+F), exclusive artificial formula milk (F). Horizontally: different ages during preterm babies’ first year
 
         //- #########################  The viz
-        script(src="js/libgif.js")
-        script(src="js/rubbable.js")
-
+        
         section
           section
             h1 A Contribution with Time-series
@@ -266,11 +295,11 @@ html
           section
             center
               img(id="animacion_1" src="images/inicioAnimacion.jpg" rel:auto_play="0" rel:animated_src="images/animacion_part_1.gif")
-            a(href="javascript:;" onmousedown="sup2.pause(); return false;" style="font-size:12pt") | Pause |
-            a(href="javascript:;" onmousedown="sup2.play(); return false;" style="font-size:12pt") Play |
-            a(href="javascript:;" onmousedown="sup2.move_to(0); return false;" style="font-size:12pt") Restart |
-            a(href="javascript:;" onmousedown="sup2.move_relative(1); return false;" style="font-size:12pt") Step forward |
-            a(href="javascript:;" onmousedown="sup2.move_relative(-1); return false;" style="font-size:12pt") Step back |
+            a(href="javascript:;" onmousedown="sup2.play(); return false;" style="font-size:12pt") | Play 
+            a(href="javascript:;" onmousedown="sup2.pause(); return false;" style="font-size:12pt") | Pause 
+            a(href="javascript:;" onmousedown="sup2.move_to(0); return false;" style="font-size:12pt") | Restart 
+            a(href="javascript:;" onmousedown="sup2.move_relative(-1); return false;" style="font-size:12pt") | Step back 
+            a(href="javascript:;" onmousedown="sup2.move_relative(1); return false;" style="font-size:12pt") | Step forward |
             script.
               var sup2 = new SuperGif({ gif: document.getElementById('animacion_1'), loop_mode: false } );
               sup2.load();
@@ -279,11 +308,11 @@ html
           section
             center
               img(id="animacion_2" src="images/inicioAnimacion_2.jpg" rel:auto_play="0" rel:animated_src="images/animacion_part_2.gif")
-            a(href="javascript:;" onmousedown="sup3.pause(); return false;" style="font-size:12pt") | Pause |
-            a(href="javascript:;" onmousedown="sup3.play(); return false;" style="font-size:12pt") Play |
-            a(href="javascript:;" onmousedown="sup3.move_to(0); return false;" style="font-size:12pt") Restart |
-            a(href="javascript:;" onmousedown="sup3.move_relative(1); return false;" style="font-size:12pt") Step forward |
-            a(href="javascript:;" onmousedown="sup3.move_relative(-1); return false;" style="font-size:12pt") Step back |
+            a(href="javascript:;" onmousedown="sup3.play(); return false;" style="font-size:12pt") | Play 
+            a(href="javascript:;" onmousedown="sup3.pause(); return false;" style="font-size:12pt") | Pause 
+            a(href="javascript:;" onmousedown="sup3.move_to(0); return false;" style="font-size:12pt") | Restart 
+            a(href="javascript:;" onmousedown="sup3.move_relative(-1); return false;" style="font-size:12pt") | Step back 
+            a(href="javascript:;" onmousedown="sup3.move_relative(1); return false;" style="font-size:12pt") | Step forward |
             script.
               var sup3 = new SuperGif({ gif: document.getElementById('animacion_2'), loop_mode: false } );
               sup3.load();
@@ -291,11 +320,11 @@ html
           section
             center
               img(id="animacion_3" src="images/inicioAnimacion_3.jpg" rel:auto_play="0" rel:animated_src="images/animacion_part_3.gif")
-            a(href="javascript:;" onmousedown="sup4.pause(); return false;" style="font-size:12pt") | Pause |
-            a(href="javascript:;" onmousedown="sup4.play(); return false;" style="font-size:12pt") Play |
-            a(href="javascript:;" onmousedown="sup4.move_to(0); return false;" style="font-size:12pt") Restart |
-            a(href="javascript:;" onmousedown="sup4.move_relative(1); return false;" style="font-size:12pt") Step forward |
-            a(href="javascript:;" onmousedown="sup4.move_relative(-1); return false;" style="font-size:12pt") Step back |
+            a(href="javascript:;" onmousedown="sup4.play(); return false;" style="font-size:12pt") | Play 
+            a(href="javascript:;" onmousedown="sup4.pause(); return false;" style="font-size:12pt") | Pause 
+            a(href="javascript:;" onmousedown="sup4.move_to(0); return false;" style="font-size:12pt") | Restart 
+            a(href="javascript:;" onmousedown="sup4.move_relative(-1); return false;" style="font-size:12pt") | Step back 
+            a(href="javascript:;" onmousedown="sup4.move_relative(1); return false;" style="font-size:12pt") | Step forward |
             script.
               var sup4 = new SuperGif({ gif: document.getElementById('animacion_3'), loop_mode: false } );
               sup4.load();
